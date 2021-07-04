@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    
+    <title>Banking System</title>
+<!--
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="styl.css">
+
+	<style type="text/css">
+
+label:after {
+  content: ": ";
+}
+
+label {
+  color: black;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+p{
+    display:inline-block;
+    width:50%;
+	padding: 15px;
+	margin:10px;
+}
+</style>
+<script>
+		function validate()
+		{
+		var fname = document.getElementById("firstName").value;
+		var chen = new RegExp("^[a-zA-Z]{1,}$");
+		var valfn = fname.match(chen);
+					
+		if (valfn == null){
+				window.alert("Please enter the Firstname");
+		return false;
+		}
+		
+		var lname = document.getElementById("lastName").value;
+		var ln = new RegExp("^[a-zA-Z]{1,}$");
+		var vallna = lname.match(ln);
+					
+		if (vallna == null){
+				window.alert("Please enter the Lastname");
+		return false;
+		}
+		
+		var ue = document.getElementById("email").value;
+		var che = new RegExp("^[a-zA-Z\\d]+@[a-zA-Z]+.[a-zA-Z]{2,3}$");
+		var eval = ue.match(che);
+		
+		if (eval==null){
+				window.alert("Please enter the Email-Id");
+		return false;
+		}
+		
+		var epass = document.getElementById("password").value;
+		var epa = new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
+		var epassw = epass.match(epa);
+			
+		if ( epassw== null){
+				window.alert("Please enter the Password");
+		return false;
+		}
+		
+		
+		var eph = document.getElementById("number").value;
+		var chph = new RegExp("^[6,7,8,9]\\d{9}$");
+		var phval = eph.match(chph);
+			
+		if ( phval== null){
+				window.alert("Please enter the Mobile Number");
+		return false;
+		}
+		
+		var esal = document.getElementById("accountbalance").value;
+		var chsal = new RegExp("^[0-9]{1,}$");
+		var valsal = eid.match(chsal);
+	
+		if (valsal == null){
+				window.alert("Please enter the Account Balance");
+		return false;
+		}
+
+	}
+
+
+	</script>
+    </head>
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+	 <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">Banking System</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">Add Customer</a></li>
+                            <li class="scroll-to-section"><a href="ViewCust.php">View Customers </a></li>
+                            <li class="scroll-to-section"><a href="TransferMoney.php">Transfer Money</a></li>
+                            <li class="scroll-to-section"><a href="transactionhistory.php">Transaction History</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+	
+	<div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1><br>Online Banking <br><strong>for YOU</strong></h1>
+                        <p>Transfer the money to the person you intend to send by fraction of seconds.</p>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="assets/images/ban.png" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+	
+	
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/mmm.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+	 <div class="login-form">
+		 <form action="connect.php" method="post" onsubmit = "return validate()">
+		 
+		 <p  style="border-bottom: 2px solid #adadad; position: relative; margin: 30px 0;">
+		 
+			<label for="firstName">First Name</label>
+			<input type="text" class="form-control" id="firstName" name="firstName"/>
+                  
+        <p  style="border-bottom: 2px solid #adadad; position: relative; margin: 30px 0;">        
+			<label for="lastName">Last Name</label>
+            <input type="text" class="form-control"  id="lastName"  name="lastName"/>
+		
+	
+		<p style="border-bottom: 2px solid #adadad; position: relative;margin: 30px 0;">
+			<label for="email">Email</label>
+            <input type="text" class="form-control" id="email" name="email"/>
+                  
+                            
+                
+		<p style="border-bottom: 2px solid #adadad; position: relative;margin: 30px 0;">
+			<label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password"/>
+                  
+                  
+				
+		<p style="border-bottom: 2px solid #adadad; position: relative;margin: 30px 0;">
+		    <label for="number">Phone Number</label>
+            <input type="number" class="form-control" id="number" name="number"/>
+                            
+                  
+		<p style="border-bottom: 2px solid #adadad; position: relative;margin: 30px 0;">
+			<label for="accountbalance">Account Balance</label>
+            <input type="number" class="form-control" id="accountbalance" name="accountbalance"/>
+                  
+                  
+		<p style="position:relative;"><input type="submit" class="logbtn" value ="Submit"/></p>
+	</form>
+	</div>
+   
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+ 
+	</div> 
+
+<!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
